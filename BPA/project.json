@@ -1,6 +1,6 @@
 {
   "name": "BPA",
-  "description": "Der erste Versuch, komplett ohne Camunda den Prozess wenigstens einmal durchzuspielen",
+  "description": "Executing the entire process in UiPath (without Camunda-integration)",
   "main": "Main.xaml",
   "dependencies": {
     "BalaReva.Excel.Activities": "[2021.0.0]",
