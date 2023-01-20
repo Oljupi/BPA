@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1517.14285714286,11034.2857142857" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1517.14285714286,11437.1428571429" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
@@ -81,7 +81,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Vacation Request" sap:VirtualizedContainerService.HintSize="1033.71428571429,10969.1428571429" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Vacation Request" sap:VirtualizedContainerService.HintSize="1112.57142857143,11372" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="startDate" />
       <Variable x:TypeArguments="x:Int32" Name="duration" />
@@ -95,7 +95,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Get Data From Excel" sap:VirtualizedContainerService.HintSize="991.428571428571,949.714285714286" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Get Data From Excel" sap:VirtualizedContainerService.HintSize="1070.28571428571,949.714285714286" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -136,12 +136,12 @@
         </ActivityAction>
       </ueab:ExcelProcessScopeX.Body>
     </ueab:ExcelProcessScopeX>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="991.428571428571,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter your ID&#xA;(5-digit code)" Title="Employee ID">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1070.28571428571,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter your ID&#xA;(5-digit code)" Title="Employee ID">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[E_ID]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Sequence DisplayName="Check ID" sap:VirtualizedContainerService.HintSize="991.428571428571,936.571428571429" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="Check ID" sap:VirtualizedContainerService.HintSize="1070.28571428571,936.571428571429" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,12 +184,12 @@
         </ui:InterruptibleWhile.Condition>
       </ui:InterruptibleWhile>
     </Sequence>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="991.428571428571,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="When do you want to start your vacation?&#xA;(Format: DD.MM.YYYY)" Title="Vacation Request (1/3)">
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1070.28571428571,302.285714285714" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="When do you want to start your vacation?&#xA;(Format: DD.MM.YYYY)" OptionsString="[DateTime.Now.ToString(&quot;dd.MM.yyyy&quot;)]" Title="Vacation Request (1/3)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[startDate]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Sequence DisplayName="Check Date Format" sap:VirtualizedContainerService.HintSize="991.428571428571,1194.28571428571" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence DisplayName="Check Date Format" sap:VirtualizedContainerService.HintSize="1070.28571428571,1249.71428571429" sap2010:WorkflowViewState.IdRef="Sequence_16">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="TestDate" />
       </Sequence.Variables>
@@ -199,15 +199,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:Comment sap:VirtualizedContainerService.HintSize="484.571428571429,115.428571428571" sap2010:WorkflowViewState.IdRef="Comment_17" Text="Here we test the given start date. The employee can try again if the format is wrong, as long as he/she doesn't enter past dates, because we don't like that." />
-      <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="484.571428571429,507.428571428571" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+      <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="484.571428571429,562.857142857143" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
         <ui:InterruptibleWhile.Body>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.571428571429,338.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_47">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.571428571429,393.714285714286" sap2010:WorkflowViewState.IdRef="Sequence_47">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334.285714285714,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="Please use the Format DD.MM.YYYY&#xD;&#xA;(e.g. 24.12.2023)&#xD;&#xA;When do you want to start your vacation?" Title="Wrong date-format">
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334.285714285714,302.285714285714" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="Please use the Format DD.MM.YYYY&#xD;&#xA;(e.g. 06.01.2024)&#xD;&#xA;When do you want to start your vacation?" OptionsString="[DateTime.Now.ToString(&quot;dd.MM.yyyy&quot;)]" Title="Wrong date-format">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[startDate]</OutArgument>
               </ui:InputDialog.Result>
@@ -218,7 +218,7 @@
           <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not DateTime.TryParseExact(startDate, &quot;dd.MM.yyyy&quot;, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, TestDate)" />
         </ui:InterruptibleWhile.Condition>
       </ui:InterruptibleWhile>
-      <If Condition="[DateTime.Now &gt;Datetime.ParseExact(StartDate, &quot;dd.MM.yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture)]" sap:VirtualizedContainerService.HintSize="484.571428571429,400" sap2010:WorkflowViewState.IdRef="If_10">
+      <If Condition="[DateTime.Today &gt; Datetime.ParseExact(StartDate, &quot;dd.MM.yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture)]" sap:VirtualizedContainerService.HintSize="484.571428571429,400" sap2010:WorkflowViewState.IdRef="If_10">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="284.571428571429,204.571428571429" sap2010:WorkflowViewState.IdRef="Sequence_49">
             <sap:WorkflowViewStateService.ViewState>
@@ -235,7 +235,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New BusinessRuleException (&quot;Very funny...&quot;)]" sap:VirtualizedContainerService.HintSize="200,21.7142857142857" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_6" />
+              <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New BusinessRuleException (&quot;Very funny, time traveler...&quot;)]" sap:VirtualizedContainerService.HintSize="200,21.7142857142857" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_6" />
             </Sequence>
           </Sequence>
         </If.Then>
@@ -250,48 +250,46 @@
         </If.Else>
       </If>
     </Sequence>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="991.428571428571,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="How long should your vacation be (number of days)?&#xA;(Format: integer)" Title="Vacation Request (2/3)">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1070.28571428571,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="How long should your vacation be (number of days)?&#xA;(Format: integer)" Title="Vacation Request (2/3)">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:Int32">[duration]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Sequence DisplayName="Check Days Left" sap:VirtualizedContainerService.HintSize="991.428571428571,912" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence DisplayName="Check Days Left" sap:VirtualizedContainerService.HintSize="1070.28571428571,1204" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment sap:VirtualizedContainerService.HintSize="592,115.428571428571" sap2010:WorkflowViewState.IdRef="Comment_3" Text="Here we check, whether the employee has enough vacation days left to get the vacation he/she requested. If not, we send an error message and end the process." />
-      <If Condition="[Integer.Parse(Emp_Row(0)(&quot;Days_Left&quot;).ToString) &lt;= duration]" DisplayName="If" sap:VirtualizedContainerService.HintSize="592,316.571428571429" sap2010:WorkflowViewState.IdRef="If_3">
-        <If.Then>
-          <Sequence DisplayName="End Process" sap:VirtualizedContainerService.HintSize="242.285714285714,113.142857142857" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <ui:Comment sap:VirtualizedContainerService.HintSize="484.571428571429,115.428571428571" sap2010:WorkflowViewState.IdRef="Comment_3" Text="Here we check, whether the employee has enough vacation days left to get the vacation he/she requested. If not, we send an error message and end the process." />
+      <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="484.571428571429,507.428571428571" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+        <ui:InterruptibleWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.571428571429,338.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_53">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[New BusinessRuleException (&quot;You don't have enough days left.&quot;)]" sap:VirtualizedContainerService.HintSize="200,21.7142857142857" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_2" />
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334.285714285714,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="[&quot;You only have &quot; + Emp_Row(0)(&quot;Days_Left&quot;).ToString + &quot; vacation days left.&quot; + Environment.NewLine + &#xD;&#xA;&quot;Please enter the length of your vacation (in days).&quot;]" Title="Not enough days left">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:Int32">[duration]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
           </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="304,152.571428571429" sap2010:WorkflowViewState.IdRef="Sequence_14">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="261.714285714286,61.1428571428571" sap2010:WorkflowViewState.IdRef="Assign_12">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Object">[Emp_Row(0)("Days_Left")]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Object">[Integer.Parse(Emp_Row(0)("Days_Left").ToString) - duration]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Else>
-      </If>
-      <If Condition="[duration &lt; 1]" sap:VirtualizedContainerService.HintSize="592,308.571428571429" sap2010:WorkflowViewState.IdRef="If_11">
+        </ui:InterruptibleWhile.Body>
+        <ui:InterruptibleWhile.Condition>
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Integer.Parse(Emp_Row(0)(&quot;Days_Left&quot;).ToString) &lt; duration" />
+        </ui:InterruptibleWhile.Condition>
+      </ui:InterruptibleWhile>
+      <Assign sap:VirtualizedContainerService.HintSize="484.571428571429,61.1428571428571" sap2010:WorkflowViewState.IdRef="Assign_12">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Object">[Emp_Row(0)("Days_Left")]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Object">[Integer.Parse(Emp_Row(0)("Days_Left").ToString) - duration]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[duration &lt; 1]" sap:VirtualizedContainerService.HintSize="484.571428571429,308.571428571429" sap2010:WorkflowViewState.IdRef="If_11">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="242.285714285714,113.142857142857" sap2010:WorkflowViewState.IdRef="Sequence_51">
             <sap:WorkflowViewStateService.ViewState>
@@ -313,7 +311,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Check Substitute" sap:VirtualizedContainerService.HintSize="991.428571428571,2916" sap2010:WorkflowViewState.IdRef="Sequence_20">
+    <Sequence DisplayName="Check Substitute" sap:VirtualizedContainerService.HintSize="1070.28571428571,2916" sap2010:WorkflowViewState.IdRef="Sequence_20">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataRow[]" Name="Sub_Row" />
         <Variable x:TypeArguments="x:Int32" Name="Sub_Result" />
@@ -323,22 +321,36 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment sap:VirtualizedContainerService.HintSize="949.142857142857,135.428571428571" sap2010:WorkflowViewState.IdRef="Comment_5" Text="Here we check, whether the Employee has a substitute. If not (or if the substitute has changed), the employee has to enter a new substitute. We then check, whether the substitute is valid." />
-      <ui:Comment sap:VirtualizedContainerService.HintSize="949.142857142857,75.4285714285714" sap2010:WorkflowViewState.IdRef="Comment_6" Text="For simplicity's sake we assume that employee names are unique in our database." />
-      <ui:Comment sap:VirtualizedContainerService.HintSize="949.142857142857,115.428571428571" sap2010:WorkflowViewState.IdRef="Comment_7" Text="If the names aren't unique, the problem is of organizational nature and hence not scope of this process automation. A solution could be, e.g., having DB-views for individual teams." />
-      <If Condition="[IsNothing(Emp_Row(0)(&quot;Sub_Name&quot;).ToString)]" DisplayName="Check Current Substitute" sap:VirtualizedContainerService.HintSize="949.142857142857,945.714285714286" sap2010:WorkflowViewState.IdRef="If_5">
+      <ui:Comment sap:VirtualizedContainerService.HintSize="1028,135.428571428571" sap2010:WorkflowViewState.IdRef="Comment_5" Text="Here we check, whether the Employee has a substitute. If not (or if the substitute has changed), the employee has to enter a new substitute. We then check, whether the substitute is valid." />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="1028,75.4285714285714" sap2010:WorkflowViewState.IdRef="Comment_6" Text="For simplicity's sake we assume that employee names are unique in our database." />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="1028,115.428571428571" sap2010:WorkflowViewState.IdRef="Comment_7" Text="If the names aren't unique, the problem is of organizational nature and hence not scope of this process automation. A solution could be, e.g., having DB-views for individual teams." />
+      <If Condition="[String.IsNullOrWhiteSpace(Emp_Row(0)(&quot;Sub_Name&quot;).ToString)]" DisplayName="Check Current Substitute" sap:VirtualizedContainerService.HintSize="1028,945.714285714286" sap2010:WorkflowViewState.IdRef="If_5">
         <If.Then>
-          <Sequence DisplayName="Substitute doesn't exist" sap:VirtualizedContainerService.HintSize="376.571428571429,338.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Substitute doesn't exist" sap:VirtualizedContainerService.HintSize="455.428571428571,598.857142857143" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334.285714285714,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="You currently don't have a substitute. Please enter the name of your substitute in the text field below." Title="Enter Substitute (3/3)">
-              <ui:InputDialog.Result>
-                <OutArgument x:TypeArguments="x:String">[NewSub]</OutArgument>
-              </ui:InputDialog.Result>
-            </ui:InputDialog>
+            <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="413.142857142857,507.428571428571" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376.571428571429,338.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334.285714285714,246.857142857143" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="You currently don't have a substitute. Please enter the name of your substitute in the text field below." Title="Enter Substitute (3/3)">
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:String">[NewSub]</OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="String.IsNullOrWhiteSpace(NewSub)" />
+              </ui:InterruptibleDoWhile.Condition>
+            </ui:InterruptibleDoWhile>
           </Sequence>
         </If.Then>
         <If.Else>
@@ -375,7 +387,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <Sequence DisplayName="Substitute Check: Existence" sap:VirtualizedContainerService.HintSize="949.142857142857,742.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_21">
+      <Sequence DisplayName="Substitute Check: Existence" sap:VirtualizedContainerService.HintSize="1028,742.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_21">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -404,7 +416,7 @@
           </If.Else>
         </If>
       </Sequence>
-      <Sequence DisplayName="Substitute Check: Team" sap:VirtualizedContainerService.HintSize="949.142857142857,610.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_30">
+      <Sequence DisplayName="Substitute Check: Team" sap:VirtualizedContainerService.HintSize="1028,610.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_30">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -457,7 +469,7 @@
         </If>
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="Vacation Request Acceptance" sap:VirtualizedContainerService.HintSize="991.428571428571,2908.57142857143" sap2010:WorkflowViewState.IdRef="Sequence_26">
+    <Sequence DisplayName="Vacation Request Acceptance" sap:VirtualizedContainerService.HintSize="1070.28571428571,2908.57142857143" sap2010:WorkflowViewState.IdRef="Sequence_26">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="Manager_Datatable" />
         <Variable x:TypeArguments="sd:DataRow[]" Name="Manager_Row" />
@@ -564,7 +576,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Comment sap:VirtualizedContainerService.HintSize="334.285714285714,75.4285714285714" sap2010:WorkflowViewState.IdRef="Comment_16" Text="(only works if you have an active outlook-account on the executing system)" />
+          <ui:Comment sap:VirtualizedContainerService.HintSize="334.285714285714,75.4285714285714" sap2010:WorkflowViewState.IdRef="Comment_16" Text="(Only works if you have an active outlook-account on the executing system)" />
           <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[Emp_Row(0)(&quot;Emp_Name&quot;).ToString + &quot; is on vacation from &quot; + startDate + &quot; for &quot; + duration.ToString + &quot; days.&quot;]" DisplayName="Send Outlook Mail To Manager" sap:VirtualizedContainerService.HintSize="334.285714285714,155.428571428571" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Vacation Granted for &quot; + Emp_Row(0)(&quot;Emp_Name&quot;).ToString]" To="[Manager_Mail]">
             <ui:SendOutlookMail.Files>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
